@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="rootVBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExcelFx.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <MenuBar fx:id="menuBar" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="603.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <menus>
+                      <Menu fx:id="File" mnemonicParsing="false" text="Файл">
+                        <items>
+                              <MenuItem fx:id="Open" mnemonicParsing="false" onAction="#Open" text="Открыть " />
+                              <MenuItem fx:id="Print" mnemonicParsing="false" onAction="#Print" text="Сохранить" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                          <MenuItem fx:id="Close" mnemonicParsing="false" onAction="#Close" text="Выход" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Правка">
+                        <items>
+                              <MenuItem fx:id="TablePatch" mnemonicParsing="false" onAction="#TablePatch" text="Настройки" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <SplitPane fx:id="SplitPane" dividerPositions="0.15" prefHeight="576.0" prefWidth="1024.0" VBox.vgrow="ALWAYS">
+         <items>
+            <ScrollPane prefViewportHeight="392.0" prefViewportWidth="87.0">
+               <content>
+                  <VBox fx:id="Vbox" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" />
+         </items>
+      </SplitPane>
+      <AnchorPane>
+         <children>
+            <ToolBar minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <HBox>
+                     <children>
+                        <Pane>
+                           <padding>
+                              <Insets right="800.0" />
+                           </padding>
+                        </Pane>
+                        <ProgressBar fx:id="ProgressBar" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </HBox>
+              </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

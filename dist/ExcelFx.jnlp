@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ExcelFx.jnlp">
+  <information>
+    <title>ExcelFx</title>
+    <vendor>seryo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Xms1600m "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ExcelFx.jar" size="52279" download="eager" />
+    <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib\commons-logging-1.1.3.jar" size="62050" download="eager" />
+    <jar href="lib\json-simple-1.1.1.jar" size="23737" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="314932" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="lib\poi-3.13-20150929.jar" size="2497380" download="eager" />
+    <jar href="lib\poi-examples-3.13-20150929.jar" size="344456" download="eager" />
+    <jar href="lib\poi-excelant-3.13-20150929.jar" size="30520" download="eager" />
+    <jar href="lib\poi-ooxml-3.13-20150929.jar" size="1142386" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.13-20150929.jar" size="5641539" download="eager" />
+    <jar href="lib\poi-scratchpad-3.13-20150929.jar" size="1307277" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ExcelFx" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ExcelFx.ExcelFX"  name="ExcelFx" />
+  <update check="always"/>
+</jnlp>
